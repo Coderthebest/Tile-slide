@@ -1,32 +1,18 @@
 body {
     font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    text-align: center;
     margin: 0;
+    padding: 0;
     background-color: #f4f4f9;
 }
-.puzzle-container {
-    display: grid;
-    grid-template-columns: repeat(4, 80px);
-    grid-template-rows: repeat(4, 80px);
-    gap: 5px;
+
+h1 {
+    color: #333;
 }
-.tile {
-    width: 80px;
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #007bff;
-    color: white;
-    font-size: 24px;
-    font-weight: bold;
-    border-radius: 5px;
-    cursor: pointer;
-}
-.empty {
-    background-color: transparent;
-    cursor: default;
+
+#puzzleCanvas {
+    display: block;
+    margin: 20px auto;
+    border: 2px solid #333;
+    background-color: #fff;
 }
