@@ -1,8 +1,6 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    margin: 0;
-    padding: 0;
     background-color: #f4f4f9;
 }
 
@@ -10,9 +8,28 @@ h1 {
     color: #333;
 }
 
-#puzzleCanvas {
-    display: block;
+#gameBoard {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-gap: 10px;
+    justify-content: center;
     margin: 20px auto;
-    border: 2px solid #333;
-    background-color: #fff;
+}
+
+.tile {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    border: 1px solid #333;
+    cursor: pointer;
+}
+
+.matched {
+    background-color: #2ecc71;
+    pointer-events: none;
 }
